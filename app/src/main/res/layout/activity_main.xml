@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#519C27B0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:background="#119C27B0"
+        android:gravity="center"
+        android:text="@string/input_the_alphabet"
+        android:textColor="#101317"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="267dp"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:hint="@string/enter_a_z"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#1B5E20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/Grass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="64dp"
+        android:background="#119C27B0"
+        android:text="@string/grass"
+        android:textColor="#080809"
+        android:textColorHighlight="#3EFFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/Sky"
+        app:layout_constraintTop_toBottomOf="@+id/user_input" />
+
+    <TextView
+        android:id="@+id/Root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#119C27B0"
+        android:text="@string/root"
+        android:textColor="#09090C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/Grass"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_input" />
+
+    <TextView
+        android:id="@+id/Sky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="80dp"
+        android:background="#119C27B0"
+        android:text="@string/sky"
+        android:textColor="#090A10"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_input" />
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#609C27B0"
+        android:text="@string/Check_btn"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Grass"
+        app:layout_constraintVertical_bias="0.24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
