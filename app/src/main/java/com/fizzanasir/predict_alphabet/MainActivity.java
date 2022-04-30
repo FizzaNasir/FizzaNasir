@@ -31,17 +31,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         input=(EditText) findViewById(R.id.user_input);
         in=input.getText().toString().toLowerCase();
-        if (in.equals("a")||in.equals("c")||in.equals("e")||in.equals("i")||in.equals("o"))
+        if (in.equals("a")||in.equals("c")||in.equals("e")||in.equals("i")||in.equals("o")||in.equals("m")||in.equals("n")||in.equals("r")||in.equals("s")||in.equals("u")||in.equals("v")||in.equals("w")||in.equals("x")||in.equals("z"))
         {
-            grass.setBackgroundColor(Color.GREEN);
+            grass.setBackgroundColor(Color.rgb(25, 230, 56));
+            sky.setBackgroundColor(Color.rgb(250, 209, 240));
+            root.setBackgroundColor(Color.rgb(250, 209, 240));
         }
-        else if(in.equals("b")||in.equals("d")||in.equals("h")||in.equals("k"))
+        else if(in.equals("b")||in.equals("d")||in.equals("h")||in.equals("k")||in.equals("t")||in.equals("f")||in.equals("l"))
         {
-            sky.setBackgroundColor(Color.GREEN);
+            sky.setBackgroundColor(Color.rgb(25, 230, 56));
+            grass.setBackgroundColor(Color.rgb(250, 209, 240));
+            root.setBackgroundColor(Color.rgb(250, 209, 240));
         }
         else
         {
-            root.setBackgroundColor(Color.GREEN);
+            root.setBackgroundColor(Color.rgb(25, 230, 56));
+            sky.setBackgroundColor(Color.rgb(250, 209, 240));
+            grass.setBackgroundColor(Color.rgb(250, 209, 240));
         }
     }
 
